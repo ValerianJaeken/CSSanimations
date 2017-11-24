@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Animesheun</title>
+  <style>
+    body{
+      animation: background 1.1s infinite;
+    }
+    .sloth img{
+      height:250px;
+      width:calc(40% - 250px);
+      border-radius:50%;
+      background-size:contain;
+      position:relative;
+      animation: sloth 4s infinite linear;
+    }
 
+    @keyframes sloth{
+      0% {left:-30%;}
+      100% {left:100%;}
+
+    }
+    @keyframes background{
+    0%   {background-color: #070719;}
+    10%  {background-color: #0A0A2A;}
+    20%  {background-color: #0B0B3B;}
+    30%  {background-color: #0B0B61;}
+    40%  {background-color: #08088A;}
+    50%  {background-color: #29088A;}
+    60%  {background-color: #210B61;}
+    70%  {background-color: #170B3B;}
+    80%  {background-color: #120A2A;}
+    90%  {background-color: #0B0719;}
+    100% {background-color: black;}
+}
+}
+</style>
+</head>
+<body>
+  <div class="sloth">
+    <img src="https://images2.memedroid.com/images/UPLOADED50/52eace229b756.jpeg" alt="Sloth">
+  </div>
+  <audio autoplay >
+    <source src="Music.mp4" type="audio/mpeg" />
+
+  </audio>
+
+</body>
+</html>
